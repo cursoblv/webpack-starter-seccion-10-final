@@ -1,0 +1,37 @@
+{
+  "name": "webpack-initial",
+  "version": "1.0.0",
+  "description": "Este es un cascaron de un proyecto de webpack",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "buildprod": "webpack --mode production",
+    "builddev": "webpack --mode development",
+    "build": "webpack",
+    "build:prod": "webpack --config webpack.prod.js",
+    "build:dev": "webpack --config webpack.dev.js",
+    "watch": "webpack --watch",
+    "start": "webpack serve --open --port=8081"
+  },
+  "author": "Benny",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.12.13",
+    "@babel/preset-env": "^7.12.13",
+    "@babel/preset-es2015": "^7.0.0-beta.53",
+    "babel-loader": "^8.2.2",
+    "babel-preset-minify": "^0.5.1",
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^7.0.0",
+    "css-loader": "^5.0.1",
+    "file-loader": "^6.2.0",
+    "html-loader": "^1.3.2",
+    "html-webpack-plugin": "^4.5.1",
+    "mini-css-extract-plugin": "^1.3.5",
+    "optimize-css-assets-webpack-plugin": "^5.0.4",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.20.1",
+    "webpack-cli": "^4.4.0",
+    "webpack-dev-server": "^3.11.2"
+  }
+}
